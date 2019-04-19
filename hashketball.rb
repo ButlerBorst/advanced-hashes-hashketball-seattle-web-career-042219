@@ -147,7 +147,7 @@ end
 
 def team_names
   teams = []
-  game_hash.each do |team, chars|
+  game_hash.each do |team, name|
       teams.push(game_hash[team][:team_name])
   end
   return teams
