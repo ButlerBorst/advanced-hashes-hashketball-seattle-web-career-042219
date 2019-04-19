@@ -118,11 +118,10 @@ def num_points_scored(player_name)
   game_hash.each do |team, chars|
     game_hash[team][:players].each do |name, stats|
      if player_name == name
-       return stats[:points] #i tried to assign this to a variable points
+       return stats[:points] 
   
       end
     end
-  #and then return points here, but hten i kept getting an error that points was undefined. 
   end
 end
 
