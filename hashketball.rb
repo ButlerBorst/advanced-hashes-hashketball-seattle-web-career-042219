@@ -11,7 +11,7 @@ def game_hash
     :away => {
       :team_name => []
       :colors => []
-      :players => {"name" => "stats"}
+      :players => {"name" => {"stats"}
     }
   }
 
