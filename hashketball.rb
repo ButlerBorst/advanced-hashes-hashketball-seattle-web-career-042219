@@ -172,6 +172,9 @@ def player_stats(name)
       game_hash[:players].each do |name, stats|
         stats.push(stats)
 end
+end
+return stats
+end
   
 def big_shoe_rebounds
 end
