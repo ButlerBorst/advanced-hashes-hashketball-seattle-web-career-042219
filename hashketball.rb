@@ -177,28 +177,22 @@ end
 player_hash
 end
   
-def big_shoe_rebounds
-  names = []
-  shoe_sizes = []
-
-  game_hash.each do |team, chars|
-    game_hash[team][:players].each do |name,stats|
-      names.push(name)
-      shoe_sizes.push(stats[:shoe])
+def biggest_shoe(hashketball)
+  player_number_with_biggest_shoe = ""
+  biggest_shoe_size = 0
+  
+  hashketball[:home][:players].each do |name, player|
+    if player[:shoe_size] > biggest_shoe_size
+      player_number_with_biggest_shoe = name
+      biggest_shoe_size = player[:shoe_size]
     end
   end
-  largest = -1
-  shoe_sizes.each do |x|
-    if x > largest
-      largest = x
+  hashketball[:away][:players].each do |name, player|
+    if player[:shoe_size] > biggest_shoe_size
+      player_number_with_biggest_shoe = name
+      biggest_shoe_size = player[:shoe_size]
     end
   end
-  player_with_largest = names[shoe_sizes.index(largest)]
-  game_hash.each do |team, chars|
-    game_hash[team][:players].each do |name, stats|
-     if player_with_largest == name
-       return stats[:rebounds]
-      end
-    end
-  end
+  
+  " #{player_number_with_biggest_shoe} : #{biggest_shoe_size} "
 end
