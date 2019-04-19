@@ -181,9 +181,8 @@ def big_shoe_rebounds(name)
 game_hash.each do |team_position, team_data|
   team_data[:players].each do |player_name, player_data|
     if player_name == name
-      return player_data[:shoe]
-      elsif player_name =! name
-      return nil 
+      puts player_data[:shoe]
+       
     end
   end
 end
