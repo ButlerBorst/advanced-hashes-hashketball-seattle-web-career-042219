@@ -173,6 +173,7 @@ def player_stats(name)
         stats.push(stats)
 end
 end
+end
 return stats
 end
   
