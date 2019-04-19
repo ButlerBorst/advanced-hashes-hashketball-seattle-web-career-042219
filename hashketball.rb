@@ -168,8 +168,8 @@ end
 def player_stats(name)
   stats = {}
   game_hash.collect do |team, name|
-    if name == game_hash.collect[team][:players]
-    stats.push([:number])
+    if name == game_hash[:players]
+      stats.push
 end
 end
 stats
