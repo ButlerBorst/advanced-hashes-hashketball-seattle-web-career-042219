@@ -177,14 +177,13 @@ end
 player_hash
 end
   
-def big_shoe_rebounds(name)
-game_hash.each do |team_position, team_data|
-  team_data[:players].each do |player_name, player_data|
-    if player_name == name
-      puts player_data[:shoe]
-       
+def big_shoe_rebounds
+  names = []
+  shoe_sizes = []
+
+  game_hash.each do |team, chars|
+    game_hash[team][:players].each do |name,stats|
+      names.push(name)
+      shoe_sizes.push(stats[:shoe])
     end
   end
-end
-
-end
