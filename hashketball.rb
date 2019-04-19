@@ -124,5 +124,9 @@ def team_colors
   
 def team_names
   
-def
+def player_numbers
+  
+def player_stats
+  
+def big_shoe_rebounds
 
