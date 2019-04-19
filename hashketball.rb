@@ -172,6 +172,8 @@ def player_stats(name)
     stats.push(:number)
 end
 end
+stats
+end
   
 def big_shoe_rebounds
 end
