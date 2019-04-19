@@ -120,5 +120,9 @@ def num_points_scored
 
 def shoe_size
 
-
+def team_colors
+  
+def team_names
+  
+def
 
