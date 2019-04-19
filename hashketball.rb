@@ -124,6 +124,7 @@ def num_points_scored(player_name)
     end
   #and then return points here, but hten i kept getting an error that points was undefined. 
   end
+end
 
 def shoe_size
 end
