@@ -187,3 +187,4 @@ def big_shoe_rebounds
       shoe_sizes.push(stats[:shoe])
     end
   end
+end
