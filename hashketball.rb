@@ -187,4 +187,3 @@ game_hash.each do |team_position, team_data|
   end
 end
 end
-end
